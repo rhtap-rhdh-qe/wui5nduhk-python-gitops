@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: wui5nduhk-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/wui5nduhk-python

@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: wui5nduhk-python-gitops
+  description: This is GitOps manifest for wui5nduhk-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=wui5nduhk-python
+    backstage.io/kubernetes-id: wui5nduhk-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: wui5nduhk-python
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:wui5nduhk-python
